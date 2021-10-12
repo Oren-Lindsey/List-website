@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oren's List - List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <meta name="theme-color" 
+      content="#B73239" 
+      media="(prefers-color-scheme: light)">
+    <meta name="theme-color" 
+      content="#92282E" 
+      media="(prefers-color-scheme: dark)">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+    </style>
+    <script src="{{url_for('static', filename='js/toggleItem.js')}}"></script>
+    <script src="{{url_for('static', filename='js/check.js')}}"></script>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <script>console.log("Hello World");</script>
+    <h1> Oren's List </h1>
+    <br>
+    <p>
+       <div class=listItem>
+      <h2>Tesla "Plaid" shirt</h2>
+      <a href="https://shop.tesla.com/product/men_s-plaid-mode-tee?sku=1549268-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="plaid-shirt-checkbox" name="plaid-shirt-checkbox" value="plaid-shirt" onclick='toggleItem("plaid-shirt")'>
+      <label for="plaid-shirt-checkbox"  id="plaid-shirt-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nike Air Force 1</h2>
+      <a href="https://www.nike.com/t/air-force-1-07-mens-shoes-5QFp5Z/CW2288-111" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="af-1-checkbox" name="af-1-checkbox" value="af-1" onclick='toggleItem("af-1")'>
+      <label for="af-1-checkbox"  id="af-1-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Nike Sport Loop</h2>
+      <a href="https://www.apple.com/shop/product/ML2U3AM/A/41mm-black-nike-sport-loop?fnode=5a3941e08676e2f5023b56885307ed0b6662e933c3e4a90366941322e3be3bbf9968a19f04654cafef3c9db88b46dd6d1bce75f8716b63e065060d3a7d719ddb7610074f5508111fde011441ed79f473" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-nike-loop-checkbox" name="watch-nike-loop-checkbox" value="watch-nike-loop" onclick='toggleItem("watch-nike-loop")'>
+      <label for="watch-nike-loop-checkbox"  id="watch-nike-loop-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Xbox Controller</h2>
+      <a href="https://www.amazon.com/Xbox-Wireless-Controller-Shock-Blue-one/dp/B08DF248LD?ref_=ast_sto_dp&th=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="xbox-controller-checkbox" name="xbox-controller-checkbox" value="xbox-controller" onclick='toggleItem("xbox-controller")'>
+      <label for="xbox-controller-checkbox"  id="xbox-controller-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Nike Blazer</h2>
+      <a href="https://www.nike.com/t/blazer-mid-77-vintage-mens-shoes-nw30B2/BQ6806-100" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="nike-blazer-checkbox" name="nike-blazer-checkbox" value="nike-blazer" onclick='toggleItem("nike-blazer")'>
+      <label for="nike-blazer-checkbox" id="nike-blazer-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Denim Jacket</h2>
+      <a href="https://www.amazon.com/Levis-Trucker-Jacket-Belle-Town-Stretch/dp/B07L4QTZ41/ref=sr_1_2?dchild=1&keywords=denim%2Bjacket&qid=1633294053&refinements=p_89%3ALevi%27s%7CSignature%2Bby%2BLevi%2BStrauss%2B%26%2BCo.%2BGold%2BLabel%2Cp_n_size_three_browse-vebin%3A2475468011&rnid=2475465011&s=apparel&sr=1-2&th=1&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="denim-jacket-checkbox" name="denim-jacket-checkbox" value="denim-jacket" onclick='toggleItem("denim-jacket")'>
+      <label for="denim-jacket-checkbox"  id="denim-jacket-label"> Loading... </label>
+      </div>
+        <div class=listItem>
+      <h2>Laptop cooling pad</h2>
+      <a href="https://www.amazon.com/HV-F2056-15-6-17-Laptop-Cooler-Cooling/dp/B07DQBNTS8/ref=sr_1_2_sspa?dchild=1&keywords=laptop%2Bcooling%2Bpad&qid=1633293924&refinements=p_72%3A1248879011&rnid=1248877011&s=electronics&sr=1-2-spons&smid=A76DCA9B5LPCP&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFURjJHVDlHSjhIRUMmZW5jcnlwdGVkSWQ9QTA0MDMzODYzRzI4ODg2MjlYTkNQJmVuY3J5cHRlZEFkSWQ9QTA4NzEwMTgyRTZJRENTU1hQUTk3JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="laptop-cooling-pad-checkbox" name="laptop-cooling-pad-checkbox" value="laptop-cooling-pad" onclick='toggleItem("laptop-cooling-pad")'>
+      <label for="laptop-cooling-pad-checkbox"  id="laptop-cooling-pad-label"> Loading... </label>
+      </div>
+        <div class=listItem>
+      <h2>Mob Grip Tape</h2>
+      <a href="https://www.amazon.com/Mob-Grip-model-Tape/dp/B003V21KFS/ref=asc_df_B003V21KFS/?tag=hyprod-20&linkCode=df0&hvadid=431872146872&hvpos=&hvnetw=g&hvrand=17590931131633636607&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009718&hvtargid=pla-691406414879&psc=1&tag=&ref=&adgrpid=104085795287&hvpone=&hvptwo=&hvadid=431872146872&hvpos=&hvnetw=g&hvrand=17590931131633636607&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9009718&hvtargid=pla-691406414879" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="mob-grip-checkbox" name="mob-grip-checkbox" value="mob-grip" onclick='toggleItem("mob-grip")'>
+      <label for="mob-grip-checkbox"  id="mob-grip-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>ICONS book by Virgil Abloh</h2>
+      <a href="https://www.amazon.com/Virgil-Abloh-Nike-ICONS-Abloh/dp/383658509X" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="icons-book-checkbox" name="icons-book-checkbox" value="mob-grip" onclick='toggleItem("icons-book")'>
+      <label for="icons-book-checkbox"  id="icons-book-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Soled Out book by Sneaker Freaker</h2>
+      <a href="https://www.barnesandnoble.com/w/soled-out-sneaker-freaker/1140146668" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="soled-out-checkbox" name="soled-out-checkbox" value="soled-out" onclick='toggleItem("soled-out")'>
+      <label for="soled-out-checkbox"  id="soled-out-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Off-White Industrial Belt</h2>
+      <a href="https://www.goat.com/apparel/off-white-classic-industrial-belt-yellow-black-owrb009e20fab0011810" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="off-whitebelt-checkbox" name="off-whitebelt-checkbox" value="off-whitebelt" onclick='toggleItem("off-whitebelt")'>
+      <label for="off-whitebelt-checkbox"  id="off-whitebelt-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Cybertruck Trucker Cap</h2>
+      <a href="https://shop.tesla.com/product/cybertruck-icon-trucker-hat?sku=7654432-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="Cybertruck-cap-checkbox" name="Cybertruck-cap-checkbox" value="Cybertruck-cap" onclick='toggleItem("Cybertruck-cap")'>
+      <label for="Cybertruck-cap-checkbox"  id="Cybertruck-cap-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Tesla Battery Day shirt</h2>
+      <a href="https://shop.tesla.com/product/men_s-battery-day-tee?sku=1633802-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="battery-day-shirt-checkbox" name="battery-day-shirt-checkbox" value="battery-day-shirt" onclick='toggleItem("battery-day-shirt")'>
+      <label for="battery-day-shirt-checkbox"  id="battery-day-shirt-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Cybertruck shirt</h2>
+      <a href="https://shop.tesla.com/product/men_s-cybertruck-bulletproof-tee?sku=7654399-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="cybertruck-shirt-checkbox" name="cybertruck-shirt-checkbox" value="cybertruck-shirt" onclick='toggleItem("cybertruck-shirt")'>
+      <label for="cybertruck-shirt-checkbox"  id="cybertruck-shirt-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Tesla Decanter</h2>
+      <a href="https://shop.tesla.com/product/tesla-decanter?sku=1655475-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="decanter-checkbox" name="decanter-checkbox" value="decanter" onclick='toggleItem("decanter")'>
+      <label for="decanter-checkbox"  id="decanter-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Vsauce Curiosity Box</h2>
+      <a href="https://www.curiositybox.com">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="vsauce-box-checkbox" name="vsauce-box-checkbox" value="vsauce-box" onclick='toggleItem("vsauce-box")'>
+      <label for="vsauce-box-checkbox"  id="vsauce-box-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Jordan hat</h2>
+      <a href="https://www.amazon.com/NIKE-Jordan-Youth-Retro-Snapback/dp/B079VS65JT/ref=sr_1_1?dchild=1&keywords=air%2Bjordan%2Bhat&qid=1633293435&refinements=p_89%3ANike&rnid=2528832011&s=apparel&sr=1-1&th=1&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="jordan-hat-checkbox" name="jordan-hat-checkbox" value="jordan-hat" onclick='toggleItem("jordan-hat")'>
+      <label for="jordan-hat-checkbox"  id="jordan-hat-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Crep Protect sneaker cleaning kit</h2>
+      <a href="https://www.amazon.com/Crep-Protect-Ultimate-Shoe-Care/dp/B07PNC3DJW/ref=sr_1_8?dchild=1&keywords=Crep+Protect&qid=1633293243&sr=8-8" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="crep-kit-checkbox" name="crep-kit-checkbox" value="crep-kit" onclick='toggleItem("crep-kit")'>
+      <label for="crep-kit-checkbox"  id="crep-kit-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Crep Protect travel kit</h2>
+      <a href="https://www.amazon.com/Crep-Protect-Cure-Cleaning-Travel/dp/B018YHSEBW/ref=sr_1_6?dchild=1&keywords=Crep+Protect&qid=1633293243&sr=8-6" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="crep-travel-checkbox" name="crep-travel-checkbox" value="crep-travel" onclick='toggleItem("crep-travel")'>
+      <label for="crep-travel-checkbox"  id="crep-travel-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Reshoevn8r sneaker cleaning kit</h2>
+      <a href="https://www.amazon.com/Reshoevn8r-Essential-Shoe-Sneaker-Cleaning/dp/B08CSXXX5M/ref=sxin_13_sbv_search_btf?cv_ct_cx=Crep%2BProtect&dchild=1&keywords=Crep%2BProtect&pd_rd_i=B08CSXXX5M&pd_rd_r=9a4062eb-7b26-41b7-a9b2-3bd5ba930af5&pd_rd_w=ZfZ9M&pd_rd_wg=B2KWe&pf_rd_p=7ea8e9d0-fed1-49e8-a002-f2d3f5cb151d&pf_rd_r=BF9WFNFK5MDCZS2QP7EA&qid=1633293243&sr=1-1-3bd9c54c-7923-453d-a901-9ecab850af93&th=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="r8-kit-checkbox" name="r8-kit-checkbox" value="r8-kit" onclick='toggleItem("r8-kit")'>
+      <label for="r8-kit-checkbox"  id="r8-kit-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>EL Wire</h2>
+      <a href="https://www.adafruit.com/product/546">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="EL-kit-checkbox" name="EL-kit-checkbox" value="EL-kit" onclick='toggleItem("EL-kit")'>
+      <label for="EL-kit-checkbox"  id="EL-kit-label"> Loading... </label>
+      </div>
+      </div>
+      <div class=listItem>
+      <h2>Nike Air Max</h2>
+      <a href="https://www.goat.com/search?category=men&condition=new_no_defects&query=air%20max&size=10.5&size=11&sortBy=PRICE_LOW_HIGH" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="air-max-checkbox" name="air-max-checkbox" value="air-max" onclick='toggleItem("air-max")'>
+      <label for="air-max-checkbox"  id="air-max-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nike Air Jordan</h2>
+      <a href="https://www.goat.com/search?category=men&condition=new_no_defects&query=air%20jordan%201%20high&size=10.5&size=11&sortBy=PRICE_LOW_HIGH" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="air-j-checkbox" name="air-j-checkbox" value="air-j" onclick='toggleItem("air-j")'>
+      <label for="air-j-checkbox"  id="air-j-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Airpods</h2>
+      <a href="https://www.apple.com/shop/product/MV7N2AM/A/airpods-with-charging-case" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="airpods-checkbox" name="airpods-checkbox" value="airpods" onclick='toggleItem("airpods")'>
+      <label for="airpods-checkbox"  id="airpods-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Airpods Pro</h2>
+      <a href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="airpods-pro-checkbox" name="airpods-pro-checkbox" value="airpods-pro" onclick='toggleItem("airpods-pro")'>
+      <label for="airpods-pro-checkbox"  id="airpods-pro-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>iPad</h2>
+      <a href="https://www.apple.com/shop/buy-ipad/ipad-10-2" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="ipad-checkbox" name="ipad-checkbox" value="ipad" onclick='toggleItem("ipad")'>
+      <label for="ipad-checkbox"  id="ipad-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>iPad Mini</h2>
+      <a href="https://www.apple.com/shop/buy-ipad/ipad-mini" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="ipad-mini-checkbox" name="ipad-mini-checkbox" value="ipad-mini" onclick='toggleItem("ipad-mini")'>
+      <label for="ipad-mini-checkbox"  id="ipad-mini-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>GRID artwork</h2>
+      <a href="https://gridstudio.cc/collections/all" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="grid-art-checkbox" name="grid-art-checkbox" value="grid-art" onclick='toggleItem("grid-art")'>
+      <label for="grid-art-checkbox"  id="grid-art-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Homepod Mini</h2>
+      <a href="https://www.apple.com/shop/buy-homepod/homepod-mini" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="homepod-mini-checkbox" name="homepod-mini-checkbox" value="homepod-mini" onclick='toggleItem("homepod-mini")'>
+      <label for="homepod-mini-checkbox"  id="homepod-mini-label"> Loading... </label>
+      </div>
+      <div class=listItem>
+      <h2>Nanoleaf Smart Bulbs</h2>
+      <a href="https://www.apple.com/shop/product/HPE62ZM/A/nanoleaf-essentials-a19-bulb?fnode=498ceb22c315c245fa258655cf324185b9812699d3a5a487f79383c4b0ef4f5d0e8956115048489cb0a88d3f12d494a0d2ec981b1cef0a3a3fd393b9347146f5f12dcaa4c99664e6765615308473a7d5e870cc050e7570b8e6fe772f41bd3890" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="smart-bulb-checkbox" name="smart-bulb-checkbox" value="smart-bulb" onclick='toggleItem("smart-bulb")'>
+      <label for="smart-bulb-checkbox"  id="smart-bulb-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Bones Reds Skateboard Bearings</h2>
+      <a href="https://www.amazon.com/Bones-Reds-Skateboard-Bearings-pack/dp/B000FDRQ1S/ref=asc_df_B000FDRQ1S/?tag=hyprod-20&linkCode=df0&hvadid=198059420081&hvpos=&hvnetw=g&hvrand=14118193728530345286&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1021278&hvtargid=pla-381795230376&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="skate-bearings-checkbox" name="skate-bearings-checkbox" value="skate-bearings" onclick='toggleItem("skate-bearings")'>
+      <label for="skate-bearings-checkbox"  id="skate-bearings-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Supreme Mob grip tape</h2>
+      <a href="https://www.ebay.com/sch/i.html?_from=R40&_nkw=supreme+mob+grip+tape&_sacat=0&LH_TitleDesc=0&LH_BIN=1&_sop=15&rt=nc&LH_ItemCondition=3" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="supreme-grip-checkbox" name="supreme-grip-checkbox" value="supreme-grip" onclick='toggleItem("supreme-grip")'>
+      <label for="supreme-grip-checkbox"  id="supreme-grip-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Supreme Spitfire skate wheels</h2>
+      <a href="https://www.ebay.com/sch/i.html?_from=R40&_nkw=supreme+x+spitfire+skate+wheels&_sacat=0&LH_TitleDesc=0&LH_BIN=1&_sop=15&rt=nc&LH_ItemCondition=3" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="supreme-wheels-checkbox" name="supreme-wheels-checkbox" value="supreme-wheels" onclick='toggleItem("supreme-wheels")'>
+      <label for="supreme-wheels-checkbox"  id="supreme-wheels-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Supreme independent trucks</h2>
+      <a href="https://www.ebay.com/sch/i.html?_from=R40&_nkw=supreme+independent+trucks&_sacat=0&LH_TitleDesc=0&LH_BIN=1&_sop=15&rt=nc&LH_ItemCondition=1000" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="supreme-trucks-checkbox" name="supreme-trucks-checkbox" value="supreme-trucks" onclick='toggleItem("supreme-trucks")'>
+      <label for="supreme-trucks-checkbox"  id="supreme-trucks-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Any Supreme skate deck</h2>
+      <a href="https://www.ebay.com/sch/i.html?_nkw=supreme+skate+deck&_sop=15&LH_BIN=1&rt=nc&LH_ItemCondition=1000" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="supreme-deck-checkbox" name="supreme-deck-checkbox" value="supreme-deck" onclick='toggleItem("supreme-deck")'>
+      <label for="supreme-deck-checkbox"  id="supreme-deck-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Crocs</h2>
+      <a href="https://www.amazon.com/crocs-Unisex-Classic-Black-Women/dp/B0014BYHJE/ref=sr_1_2?dchild=1&keywords=crocs&qid=1633291978&sr=8-2&th=1&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="crocs-checkbox" name="supreme-deck-checkbox" value="crocs" onclick='toggleItem("crocs")'>
+      <label for="crocs-checkbox"  id="crocs-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Ultimate Sneaker Book book by Sneaker Freaker</h2>
+      <a href="https://www.amazon.com/Sneaker-Freaker-Ultimate-Book/dp/3836572230/ref=asc_df_3836572230/?tag=hyprod-20&linkCode=df0&hvadid=312057344057&hvpos=&hvnetw=g&hvrand=15075013331380690233&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1021278&hvtargid=pla-524493154053&psc=1" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="ultimate-sneaker-bk-checkbox" name="ultimate-sneaker-bk-checkbox" value="ultimate-sneaker-bk" onclick='toggleItem("ultimate-sneaker-bk")'>
+      <label for="ultimate-sneaker-bk-checkbox"  id="ultimate-sneaker-bk-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Rite in the Rain Pen</h2>
+      <a href="https://www.amazon.com/Rite-Rain-Weatherproof-Black-Clicker/dp/B000QBPZKS/ref=sr_1_1_sspa?dchild=1&keywords=rite+in+the+rain+pen&qid=1633522823&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyT0pLVkFNWEg4UEdUJmVuY3J5cHRlZElkPUEwOTIxNDUxMTVTMFZIRzlSTTVDWCZlbmNyeXB0ZWRBZElkPUEwMjE3MzMzMzI1N1RXVVI1Q05MMCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="rr-pen-checkbox" name="rr-pen-checkbox" value="rr-pen" onclick='toggleItem("rr-pen")'>
+      <label for="rr-pen-checkbox"  id="rr-pen-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Diecast 1/18 scale Tesla Roadster</h2>
+      <a href="https://shop.tesla.com/product/diecast-1_18-scale-roadster?sku=1524001-00-A" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="roadster-dc-checkbox" name="roadster-dc-checkbox" value="roadster-dc" onclick='toggleItem("roadster-dc")'>
+      <label for="roadster-dc-checkbox"  id="roadster-dc-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Clip 3 Speaker</h2>
+      <a href="https://www.amazon.com/JBL-Waterproof-Portable-Bluetooth-Speaker/dp/B07Q6ZWMLR/ref=sr_1_4?dchild=1&keywords=jbl+clip&qid=1633291593&sr=8-4" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="clip-3-checkbox" name="clip-3-checkbox" value="clip-3" onclick='toggleItem("clip-3")'>
+      <label for="clip-3-checkbox"  id="clip-3-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Clip 4 Speaker</h2>
+      <a href="https://www.amazon.com/JBL-Clip-Built-Waterproof-JBLCLIP4BLKAM/dp/B08PJ7JMQM/ref=sr_1_1_sspa?dchild=1&keywords=jbl+clip&qid=1633291593&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFWTFXNDhRSEVaUlgmZW5jcnlwdGVkSWQ9QTA2Njk2NjZTVUJLTTNSQzdKT04mZW5jcnlwdGVkQWRJZD1BMDUyNjY1NjJESlVLSDU1SEZBMUUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="clip-4-checkbox" name="clip-4-checkbox" value="clip-4" onclick='toggleItem("clip-4")'>
+      <label for="clip-4-checkbox"  id="clip-4-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Modern Buckle</h2>
+      <a href="https://www.apple.com/shop/product/ML7G3AM/A/41mm-chalk-modern-buckle-small?fnode=5a3941e08676e2f5023b56885307ed0b6662e933c3e4a90366941322e3be3bbf9968a19f04654cafef3c9db88b46dd6d1bce75f8716b63e065060d3a7d719ddb7610074f5508111fde011441ed79f473" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-modern-checkbox" name="watch-modern-checkbox" value="watch-modern" onclick='toggleItem("watch-modern")'>
+      <label for="watch-modern-checkbox"  id="watch-modern-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Milanese Loop</h2>
+      <a href="https://www.apple.com/shop/product/ML743AM/A/41mm-graphite-milanese-loop?fnode=5a3941e08676e2f5023b56885307ed0b6662e933c3e4a90366941322e3be3bbf9968a19f04654cafef3c9db88b46dd6d1bce75f8716b63e065060d3a7d719ddb7610074f5508111fde011441ed79f473" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-milanese-checkbox" name="watch-milanese-checkbox" value="watch-milanese" onclick='toggleItem("watch-milanese")'>
+      <label for="watch-milanese-checkbox"  id="watch-milanese-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Nike Sport Band</h2>
+      <a href="https://www.apple.com/shop/product/ML833AM/A/41mm-anthracite-black-nike-sport-band?fnode=5a3941e08676e2f5023b56885307ed0b6662e933c3e4a90366941322e3be3bbf9968a19f04654cafef3c9db88b46dd6d1bce75f8716b63e065060d3a7d719ddb7610074f5508111fde011441ed79f473" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-nike-band-checkbox" name="watch-nike-band-checkbox" value="watch-nike-band" onclick='toggleItem("watch-nike-band")'>
+      <label for="watch-nike-band-checkbox"  id="watch-nike-band-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Product Red Sport Band</h2>
+      <a href="https://www.apple.com/shop/product/MKUD3AM/A/41-mm-productred-sport-band-regular?fnode=ca289240c78eb2f4b0bb72974a4a610778de0a3082473c5718f1ce7b8ad7d7dcccc1f3acd016e01c8bec9a603cc890c37897acda2f04875ead5e46c61de55d0e2bee31152299dcd93c79241b6a49d2e2" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-band-checkbox" name="watch-band-checkbox" value="watch-band" onclick='toggleItem("watch-band")'>
+      <label for="watch-band-checkbox"  id="watch-band-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Liftoff book by Eric Berger</h2>
+      <a href="https://www.amazon.com/Liftoff-Desperate-Early-Launched-SpaceX/dp/0062979973" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="liftoff-book-checkbox" name="liftoff-book-checkbox" value="liftoff-book" onclick='toggleItem("liftoff-book")'>
+      <label for="liftoff-book-checkbox"  id="liftoff-book-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Replit Hacker Subscription</h2>
+      <a href="https://replit.com/site/pricing?context=sidebar&hasUpgradeLocationExperiment=true" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="replit-sub-checkbox" name="replit-sub-checkbox" value="replit-sub" onclick='toggleItem("replit-sub")'>
+      <label for="replit-sub-checkbox"  id="replit-sub-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Shoe Dog book by Phil Knight</h2>
+      <a href="https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135910/ref=sr_1_7?keywords=shoe+dog&qid=1633027120&s=books&sr=1-7" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="shoedog-bk-checkbox" name="shoedog-bk-checkbox" value="shoedog-bk" onclick='toggleItem("shoedog-bk")'>
+      <label for="shoedog-bk-checkbox"  id="shoedog-bk-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Beats Studio Buds</h2>
+      <a href="https://www.amazon.com/Beats-Studio-Cancelling-Earbuds-Built-Bluetooth-Headphones/dp/B096SV8SJG" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="beats-buds-checkbox" name="beats-buds-checkbox" value="beats-buds" onclick='toggleItem("beats-buds")'>
+      <label for="beats-buds-checkbox"  id="beats-buds-label"> Loading... </label>
+      </div>
+       <div class=listItem>
+      <h2>Apple Watch Magnetic Charging Dock</h2>
+      <a href="https://www.apple.com/shop/product/MU9F2AM/A/apple-watch-magnetic-charging-dock?fnode=30ac590f5f5c41c0ed0675cf5be4f6e92ba98294f928f20570190291f9fb85549e75a8aa068363508ee9470f064f34ea04313c8ee5f34e8b449ce84d237a6d9d8397a843591e7d13c83850604c3e33c347d1cc403381cd03f1e2f11af97bcba2c40723ac2e6739f6974414bc17e15c6f" rel="noopener noreferrer" target="_blank">Go ↗️</a>
+      <br>
+      <input type="checkbox" id="watch-charger-checkbox" name="watch-charger-checkbox" value="watch-charger" onclick='toggleItem("watch-charger")'>
+      <label for="watch-charger-checkbox"  id="watch-charger-label"> Loading... </label>
+      </div>
+    <div class=navbar>
+      <a href="/">Go home</a>
+      <br>
+      <a href="/sitemap">Sitemap</a> 
+    </div> 
+    </p>
+    <script>checkItems()</script>
+  </body>
+</html>

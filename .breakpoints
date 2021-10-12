@@ -1,0 +1,28 @@
+{
+  "files": {
+    "static/js/ghost cursor.js": [
+      {
+        "id": "1c9e4b81-3b1e-4ca3-86fa-cea0cfa89965",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ],
+    "templates/anotherPage.html": [
+      {
+        "id": "f2424877-4516-4b1c-bae2-37d440afc9d9",
+        "line": 20,
+        "version": 1,
+        "index": 721
+      }
+    ],
+    "templates/style.css": [
+      {
+        "id": "2a46e70f-6998-4df9-9f52-f59a8870672c",
+        "line": 1,
+        "version": 0,
+        "index": 0
+      }
+    ]
+  }
+}

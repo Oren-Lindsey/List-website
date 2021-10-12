@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@media (prefers-color-scheme: light) {
+    h1   {color: #1f1f1f; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
+    p    {color: #3545A7; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
+    h2   {color: #3545A7; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif;}
+    div   {color: #3545A7; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
+
+    body {
+        background-color: #F1F5FB;
+    }
+    a:link, a:visited {
+      text-align: center;
+      display: inline-block;
+      color: #3545A7;
+      padding: 1px 1px;
+      text-decoration: none;
+      font-size: 3.5vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    a:hover {
+        background-color: #B73239;
+        color: #3545A7;
+    }
+    ::selection {
+        color: #B73239;
+        background: #F1F5FB;
+    }
+    .navbar {
+      position: relative;
+      height: 1vh;
+    }
+    .listItem {
+      position: relative;
+      background: #B73239;
+      color: #3545A7;
+    }
+    .listItem h2 {
+      position: relative;
+      color: #1f1f1f;
+      padding: 1px 1px;
+    }
+    .listItem p {
+      position: relative;
+      color: #F1F5FB;
+    }
+    .listItem a:link, a:visited {
+      text-align: center;
+      display: inline-block;
+      color: #3545A7;
+      padding: 1px 1px;
+      text-decoration: none;
+      font-size: 3.5vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    .listItem label {
+      text-align: center;
+      color: #F1F5FB;
+      padding: 14px 16px;
+      font-size: 2vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    .listItem a:hover {
+        background-color: #3545A7;
+        color: #B73239;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    h1   {color: #F1F5FB; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
+    p    {color: blue; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
+    h2   {color: blue; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif;}
+    div   {color: blue; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
+    body {
+        background-color: #1f1f1f;
+    }
+    a:link, a:visited {
+      text-align: center;
+      display: inline-block;
+      color: blue;
+      padding: 1px 1px;
+      text-decoration: none;
+      font-size: 3.5vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    a:hover {
+        background-color: #92282E;
+        color: blue;
+    }
+    ::selection {
+        color: #92282E;
+        background: #1f1f1f;
+    }
+    .navbar {
+      position: relative;
+      height: 1vh;
+    }
+    .listItem {
+      position: relative;
+      background: #92282E;
+      color: blue;
+    }
+    .listItem h2 {
+      position: relative;
+      color: #F1F5FB;
+    }
+    .listItem p {
+      position: relative;
+      color: #1f1f1f;
+    }
+    .listItem a:link, a:visited {
+      text-align: center;
+      display: inline-block;
+      color: blue;
+      padding: 1px 1px;
+      text-decoration: none;
+      font-size: 3.5vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    .listItem label {
+      text-align: center;
+      color: #1f1f1f;
+      padding: 14px 16px;
+      font-size: 2vh;
+      font-family: 'Manrope', sans-serif;
+    }
+    .listItem a:hover {
+        background-color: blue;
+        color: #B73239;
+    }
+}
+
+.force-select {  
+  -webkit-user-select: all;  /* Chrome 49+ */
+  -moz-user-select: all;     /* Firefox 43+ */
+  -ms-user-select: all;      /* No support yet */
+  user-select: all;          /* Likely future */   
+}
