@@ -111,7 +111,7 @@ db["replit-sub"] = False
 db["shoedog-bk"] = False
 db["beats-buds"] = False
 db["watch-charger"] = False
-print(db.all())
+print(db.keys())
 
 @app.route('/api/get-status/')
 def returnAllItems():
