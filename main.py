@@ -10,61 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-#API
-items = {
-  "xbox-controller": False,
-  "nike-blazer": False,
-  "denim-jacket": False,
-  "laptop-cooling-pad": False,
-  "mob-grip": False,
-  "icons-book": False,
-  "soled-out": False,
-  "off-whitebelt": False,
-  "Cybertruck-cap": False,
-  "battery-day-shirt": False,
-  "cybertruck-shirt": False,
-  "plaid-shirt": False,
-  "decanter": False,
-  "vsauce-box": False,
-  "jordan-hat": False,
-  "crep-kit": False,
-  "crep-travel": False,
-  "r8-kit": False,
-  "EL-kit": False,
-  "air-max": False,
-  "air-j": False,
-  "airpods": False,
-  "airpods-pro": False,
-  "ipad": False,
-  "ipad-mini": False,
-  "grid-art": False,
-  "homepod-mini": False,
-  "smart-bulb": False,
-  "skate-bearings": False,
-  "supreme-grip": False,
-  "supreme-wheels": False,
-  "supreme-trucks": False,
-  "supreme-deck": False,
-  "crocs": False,
-  "ultimate-sneaker-bk": False,
-  "roadster-dc": False,
-  "rr-pen": False,
-  "clip-3": False,
-  "clip-4": False,
-  "af-1": False,
-  "watch-modern": False,
-  "watch-milanese": False,
-  "watch-nike-loop": False,
-  "watch-nike-band": False,
-  "replit-sub": False,
-  "shoedog-bk": False,
-  "liftoff-book": False,
-  "watch-band": False,
-  "beats-buds": False,
-  "watch-charger": False,
-}
-print(items)
-
+#setup db
 db["xbox-controller"] = False
 db["nike-blazer"] = False
 db["denim-jacket"] = False
@@ -111,7 +57,26 @@ db["replit-sub"] = False
 db["shoedog-bk"] = False
 db["beats-buds"] = False
 db["watch-charger"] = False
-print(db.keys())
+db["watch-band"] = False
+db["shoedog-bk"] = False
+db["liftoff-book"] = False
+db["cybertruck-shirt"] = False
+db["crep-travel"] = False
+
+items = {
+  "test-item": False
+}
+
+def setDict():
+  for i in db:
+    items[i] = db[i]
+
+setDict()
+
+def setDB():
+  for n in items:
+    db[n] = items[n]
+  print(db.keys())
 
 @app.route('/api/get-status/')
 def returnAllItems():
@@ -124,12 +89,14 @@ def toggleItem(itemToSwitch):
       if itemToSwitch in items:
         if items[itemToSwitch] == True:
           items[itemToSwitch]  =  False
+          setDB()
           response = "Toggled to false"
           return response
         elif items[itemToSwitch] == False:
           items[itemToSwitch]  =  True
+          setDB()
           response = "Toggled to true"
-          return "Toggled to true"
+          return response
         else:
           return "Error - It seems that the item was neither true nor false. It should be one or the other"
       else:
@@ -151,5 +118,6 @@ def sitemap():
 def pageNotFound(error):
     return render_template('pageNotFound.html'), 404
 
+print(items)
 print("Starting up")
 app.run(host='0.0.0.0', port=8080)
