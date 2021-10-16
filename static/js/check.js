@@ -1,4 +1,4 @@
-function checkItems() {
+async function checkItems() {
   async function getApi(url) {
       // Storing response
       const response = await fetch(url);
@@ -27,13 +27,15 @@ function editHtml(data) {
     var currentItemVal = itemVals[i];
     console.log(currentItemVal);
     var label = document.getElementById(`${currentItemName}-label`);
+    var checkbox = document.getElementById(`${currentItemName}-checkbox`);
+    console.log(checkbox);
     if (currentItemVal) {
-      var checkbox = document.getElementById(`${currentItemName}-checkbox`);
       console.log(`Item "${currentItemName}" is true`);
-      console.log(checkbox);
-      checkbox.checked = !checkbox.checked;
+      checkbox.checked = true;
       label.innerHTML = `Someone has bought this (Uncheck this if you're sure no one has bought it)`
     } else {
+      console.log(`Item "${currentItemName}" is false`);
+      checkbox.checked = false;
       label.innerHTML = `No one has bought this (Check this box if you buy it)`
     }
   }

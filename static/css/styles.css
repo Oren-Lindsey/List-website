@@ -20,6 +20,7 @@
     a:hover {
         background-color: #B73239;
         color: #3545A7;
+        font-size: 3.5vh;
     }
     ::selection {
         color: #B73239;
@@ -62,6 +63,7 @@
     .listItem a:hover {
         background-color: #3545A7;
         color: #B73239;
+        font-size: 3.5vh;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -84,6 +86,7 @@
     a:hover {
         background-color: #92282E;
         color: blue;
+        font-size: 3.5vh;
     }
     ::selection {
         color: #92282E;
@@ -125,6 +128,7 @@
     .listItem a:hover {
         background-color: blue;
         color: #B73239;
+        font-size: 3.5vh;
     }
 }
 

@@ -1,4 +1,4 @@
-function toggleItem(itemToToggle) {
+async function toggleItem(itemToToggle) {
   if (confirm(`Are you sure you want to change the status of this item?`)) {
     console.log(`user confirmed`);
     console.log(itemToToggle)
@@ -27,10 +27,10 @@ function toggleItem(itemToToggle) {
     if (checkboxChecked) {
       label.innerHTML = `Someone has bought this  (Uncheck this if you're sure no one has bought it)`
     } else {
-    label.innerHTML = `No one has bought this yet (Check this box if you buy it)`
+    label.innerHTML = `No one has bought this (Check this box if you buy it)`
     }
     } else {
       var checkbox = document.getElementById(`${itemToToggle}-checkbox`)
-      checkbox.checked = !checkbox.checked;
+      checkbox.checked = true;
     }
 }
