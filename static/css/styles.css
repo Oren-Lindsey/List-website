@@ -69,21 +69,42 @@
     .pace {
 	    -webkit-pointer-events: none;
 	    pointer-events: none;
-	    -webkit-user-select: none;
+
+      -webkit-user-select: none;
 	    -moz-user-select: none;
 	    user-select: none;
+
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+
+	    -webkit-transform: translate3d(0, -50px, 0);
+	    -ms-transform: translate3d(0, -50px, 0);
+	    transform: translate3d(0, -50px, 0);
+
+	    -webkit-transition: transform .5s ease-out;
+	    -ms-transition: transform .5s ease-out;
+	    transition: transform .5s ease-out;
     }
-    .pace-inactive {
-	    display: none;
+
+    .pace.pace-active {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
     }
+
     .pace .pace-progress {
-	    background: #B73239;
+	    display: block;
 	    position: fixed;
 	    z-index: 2000;
 	    top: 0;
 	    right: 100%;
 	    width: 100%;
-	    height: 2px;
+	    height: 1vh;
+	    background: #B73239;
+
+	    pointer-events: none;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -143,33 +164,54 @@
     }
     .listItem a:hover {
         background-color: blue;
-        color: #B73239;
+        color: #92282E;
         font-size: 3.5vh;
     }
     .pace {
 	    -webkit-pointer-events: none;
 	    pointer-events: none;
-	    -webkit-user-select: none;
+
+      -webkit-user-select: none;
 	    -moz-user-select: none;
 	    user-select: none;
+
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+
+	    -webkit-transform: translate3d(0, -50px, 0);
+	    -ms-transform: translate3d(0, -50px, 0);
+	    transform: translate3d(0, -50px, 0);
+
+	    -webkit-transition: transform .5s ease-out;
+	    -ms-transition: transform .5s ease-out;
+	    transition: transform .5s ease-out;
     }
-    .pace-inactive {
-	    display: none;
+
+    .pace.pace-active {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
     }
+
     .pace .pace-progress {
-	    background: #92282E;
+	    display: block;
 	    position: fixed;
 	    z-index: 2000;
 	    top: 0;
 	    right: 100%;
 	    width: 100%;
-	    height: 2px;
+	    height: 1vh;
+	    background: #92282E;
+
+	    pointer-events: none;
     }
 }
 
 .force-select {  
-  -webkit-user-select: all;  /* Chrome 49+ */
-  -moz-user-select: all;     /* Firefox 43+ */
-  -ms-user-select: all;      /* No support yet */
-  user-select: all;          /* Likely future */   
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;  
 }
