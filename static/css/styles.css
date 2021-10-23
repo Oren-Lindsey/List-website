@@ -29,6 +29,7 @@
     .navbar {
       position: relative;
       height: 1vh;
+      color: #B73239;
     }
     .listItem {
       position: relative;
@@ -65,6 +66,25 @@
         color: #B73239;
         font-size: 3.5vh;
     }
+    .pace {
+	    -webkit-pointer-events: none;
+	    pointer-events: none;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    user-select: none;
+    }
+    .pace-inactive {
+	    display: none;
+    }
+    .pace .pace-progress {
+	    background: #B73239;
+	    position: fixed;
+	    z-index: 2000;
+	    top: 0;
+	    right: 100%;
+	    width: 100%;
+	    height: 2px;
+    }
 }
 @media (prefers-color-scheme: dark) {
     h1   {color: #F1F5FB; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
@@ -91,10 +111,6 @@
     ::selection {
         color: #92282E;
         background: #1f1f1f;
-    }
-    .navbar {
-      position: relative;
-      height: 1vh;
     }
     .listItem {
       position: relative;
@@ -129,6 +145,25 @@
         background-color: blue;
         color: #B73239;
         font-size: 3.5vh;
+    }
+    .pace {
+	    -webkit-pointer-events: none;
+	    pointer-events: none;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    user-select: none;
+    }
+    .pace-inactive {
+	    display: none;
+    }
+    .pace .pace-progress {
+	    background: #92282E;
+	    position: fixed;
+	    z-index: 2000;
+	    top: 0;
+	    right: 100%;
+	    width: 100%;
+	    height: 2px;
     }
 }
 
