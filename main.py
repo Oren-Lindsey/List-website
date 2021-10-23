@@ -42,7 +42,6 @@ db["supreme-grip"] = False
 db["supreme-wheels"] = False
 db["supreme-trucks"] = False
 db["supreme-deck"] = False
-db["crocs"] = False
 db["ultimate-sneaker-bk"] = False
 db["roadster-dc"] = False
 db["rr-pen"] = False
@@ -62,6 +61,7 @@ db["shoedog-bk"] = False
 db["liftoff-book"] = False
 db["cybertruck-shirt"] = False
 db["crep-travel"] = False
+
 
 items = {
   "test-item": False

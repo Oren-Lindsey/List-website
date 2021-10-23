@@ -2,7 +2,7 @@
 @media (prefers-color-scheme: light) {
     h1   {color: #1f1f1f; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
     p    {color: #3545A7; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
-    h2   {color: #3545A7; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif;}
+    h2   {color: #3545A7; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif; text-decoration: none;}
     div   {color: #3545A7; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
 
     body {
@@ -89,7 +89,7 @@
 @media (prefers-color-scheme: dark) {
     h1   {color: #F1F5FB; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
     p    {color: blue; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
-    h2   {color: blue; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif;}
+    h2   {color: blue; text-align: center; font-size: 4vh; font-family: 'Manrope', sans-serif; text-decoration: none;}
     div   {color: blue; text-align: center; font-size: 3.5vh; font-family: 'Manrope', sans-serif;}
     body {
         background-color: #1f1f1f;
