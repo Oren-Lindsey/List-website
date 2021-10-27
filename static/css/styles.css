@@ -106,6 +106,18 @@
 
 	    pointer-events: none;
     }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1f1f1f; 
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #B73239; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3545A7; 
+    }
 }
 @media (prefers-color-scheme: dark) {
     h1   {color: #F1F5FB; text-align: center; font-size: 5vh; font-family: 'Manrope', sans-serif;}
@@ -206,6 +218,18 @@
 	    background: #92282E;
 
 	    pointer-events: none;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F1F5FB; 
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #92282E; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: blue; 
     }
 }
 
