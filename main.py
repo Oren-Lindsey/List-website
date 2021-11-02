@@ -63,7 +63,8 @@ def index():
 #db["crep-travel"] = False
 #db["ow-notes"] = False
 #db["rent-tesla"] = False
-
+db["cybertruck-graffiti"] = False
+db["cybertruck-owl"] = False
 
 
 items = {
