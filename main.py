@@ -1,5 +1,5 @@
 #Made by Oren Lindsey, ©2021
-
+#todo = enable smooth-scroll
 from flask import Flask, render_template
 from replit import db
 import json
@@ -63,8 +63,8 @@ def index():
 #db["crep-travel"] = False
 #db["ow-notes"] = False
 #db["rent-tesla"] = False
-db["cybertruck-graffiti"] = False
-db["cybertruck-owl"] = False
+#db["cybertruck-graffiti"] = False
+#db["cybertruck-owl"] = False
 
 
 items = {
